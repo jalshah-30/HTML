@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter Name" required>
+        </div>
+
+        <div>
+            <label for="Ph">Phone number:</label>
+            <input id="Ph" type="tel" placeholder="Enter Phone" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter Email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Enter password" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of birth:</label>
+            <input id="dob" type="date" placeholder="Enter Phone">
+        </div>
+
+        <!-- Selection bar -->
+
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div>
+            <p>Subscription plan</p>
+            <input id="basic" type="radio" name="subscription" value="basic">
+            <label for="basic">Basic</label>
+
+            <input id="premium" type="radio" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+
+            <input id="vip" type="radio" name="subscription" value="vip">
+            <label for="vip">VIP</label>
+        </div>
+        <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I agree all terms and conditions</label>
+        </div>
+
+        <!-- Text area for reviews and comments -->
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter you reviews and comments" rows="5"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
