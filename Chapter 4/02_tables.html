@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in html</title>
+    <style>
+        /* Base table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table header */
+        thead {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            border: 2px solid black;
+        }
+
+        /* Alternate row colors */
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Hover effect */
+        tbody tr:hover {
+            background-color: #e1f5fe;
+            cursor: pointer;
+        }
+
+        /* Optional: Responsive */
+        @media screen and (max-width: 768px) {
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            th {
+                background-color: #34495e;
+            }
+
+            td {
+                
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                font-weight: bold;
+                color: #333;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MARKS in OOP</h1>
+    <table>
+        <!-- Head of the Table -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Enrollment Number</th>
+                <th>Marks(out of 100)</th>
+            </tr>
+        </thead>
+
+        <!-- Body of the Table -->
+        <tbody>
+            <tr>
+                <td>Jal Shah</td>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Kartikeya Dabral</td>
+                <td>25</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Mayank Desai</td>
+                <td>10</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Aayush Jasani</td>
+                <td>02</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td colspan="2">Average:</td>
+                <td>73.5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
