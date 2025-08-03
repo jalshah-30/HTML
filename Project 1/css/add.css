@@ -1,0 +1,115 @@
+/* Base reset and fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    padding: 2rem;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #ff3f6c;
+}
+
+div {
+    margin-bottom: 1.5rem;
+}
+
+/* Label and Input Styling */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff3f6c;
+}
+
+/* Checkbox Section */
+form div:nth-of-type(6) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+form label[for="south"],
+form label[for="chinese"],
+form label[for="punjabi"],
+form label[for="pizza"],
+form label[for="burger"] {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    gap: 2px; /* or remove this line for zero gap */
+    cursor: pointer;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #ff3f6c;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #e8345f;
+}

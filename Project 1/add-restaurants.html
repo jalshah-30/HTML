@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant</title>
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+
+    
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter name of Restaurant" required>
+        </div>
+
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address"  placeholder="Enter restaurant full address" rows="5"></textarea>
+        </div>
+
+        <div>
+            <label for="ph">Phone Number:</label>
+            <input id="ph" type="tel" placeholder="Enter hotel number:" required>
+        </div>
+
+        <div>
+           <label for="opening">Opens at:</label>
+           <input id="opening" type="time" name="opening"><br><br>
+
+           <label for="closing">Closes at:</label>
+           <input id="closing" type="time" name="closing">
+        </div>
+
+        <h3>What will be served?</h3>
+        <div class="checkbox-group">
+            <input id="south" type="checkbox" required>
+            <label for="south">South Indian</label>
+
+            <input id="chinese" type="checkbox" required>
+            <label for="chinese">Chinese</label>
+
+            <input id="punjabi" type="checkbox" required>
+            <label for="punjabi">South Indian</label>
+
+            <input id="pizza" type="checkbox" required>
+            <label for="pizza">Pizza</label>
+
+            <input id="burger" type="checkbox" required>
+            <label for="burger">Burger</label>
+        </div>
+
+        <div>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+    <script src="js/add.js"></script>
+</body>
+
+</html>
